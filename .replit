@@ -1,1 +1,1 @@
-run = "javac Main.java && java Main"
+run = "cd src && javac Main.java Game.java entities/*.java world/*.java utils/Data_types/*.java && java Main"

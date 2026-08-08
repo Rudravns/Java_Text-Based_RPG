@@ -15,7 +15,7 @@ public class Entity {
         this.health = health;
         this.attack = attack;
         this.mana = mana;
-        this.position = position
+        this.position = position;
     }
 
     public void takeDamage(int damage) {

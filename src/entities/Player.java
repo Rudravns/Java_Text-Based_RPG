@@ -1,5 +1,5 @@
 package entities;
-import java.util.*;
+import utils.Data_types.Point;
 
 public class Player extends Entity {
 
@@ -10,5 +10,4 @@ public class Player extends Entity {
     public void attack(Enemy enemy) {
         enemy.takeDamage(10);
     }
-}
 }
