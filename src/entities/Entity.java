@@ -30,4 +30,13 @@ public class Entity {
     public boolean isAlive() {
         return health > 0;
     }
+
+    public Point getPosition() {
+        return position;
+    }
+
+    public void move(int dx, int dy) {
+        position.setX(position.getX() + dx);
+        position.setY(position.getY() + dy);
+    }
 }

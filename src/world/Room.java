@@ -20,6 +20,11 @@ public class Room {
     };
 
     public int[][] getMap(int room){
-        return test; //test map for now, later using switch case to return different maps
+        // Deep copy to prevent modifications from persisting
+        int[][] copy = new int[test.length][];
+        for (int i = 0; i < test.length; i++) {
+            copy[i] = test[i].clone();
+        }
+        return copy;  //test map for now, later using switch case to return different maps
     }
 }

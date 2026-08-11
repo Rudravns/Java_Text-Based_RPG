@@ -10,4 +10,13 @@ public class Player extends Entity {
     public void attack(Enemy enemy) {
         enemy.takeDamage(10);
     }
+    
+    public Point getPosition() {
+        return super.getPosition();
+    }
+
+    public void move(int dx, int dy) {
+        super.move(dx, dy);
+        
+    }
 }
